@@ -82,10 +82,10 @@ let NERDTreeShowHidden=1
 " }
 
 " NerdTREE_TABS {
-g:nerdtree_tabs_open_on_gui_startup=1
-g:nerdtree_tabs_open_on_console_startup=1
-g:nerdtree_tabs_open_on_new_tab=1 " Love this!
-g:nerdtree_tabs_autoclose=1
+let g:nerdtree_tabs_open_on_gui_startup=1
+let g:nerdtree_tabs_open_on_console_startup=1
+let g:nerdtree_tabs_open_on_new_tab=1 " Love this!
+let g:nerdtree_tabs_autoclose=1
 " }
 
 " Buffer explorer {
