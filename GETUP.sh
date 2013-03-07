@@ -23,6 +23,11 @@ cd nerdtree
 git pull
 cd ..
 
+git clone https://github.com/jistr/vim-nerdtree-tabs.git
+cd vim-nerdtree-tabs
+git pull
+cd ..
+
 git clone https://github.com/ervandew/supertab.git
 cd supertab
 git pull
@@ -52,6 +57,7 @@ git clone https://github.com/vim-scripts/taglist.vim.git
 cd taglist.vim
 git pull
 cd ..
+
 
 ## REPEAT FOR NEW BUNDLES
 
