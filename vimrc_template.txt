@@ -130,4 +130,8 @@ if winwidth(0) >= 160
     let Tlist_WinWidth = 40
 endif
 "
-
+" 2013.3.7 yh add these two lines to enable NERDTree in pure commandline mode
+" upon startup and move the cursor to the main editing command
+" http://stackoverflow.com/questions/1447334/how-do-you-add-nerdtree-to-your-vimrc
+autocmd VimEnter * NERDTree
+autocmd VimEnter * wincmd p
