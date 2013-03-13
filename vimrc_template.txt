@@ -71,7 +71,7 @@ set noeb vb t_vb=
 " diable gui menu
 set guioptions-=T
 
-" set transparency=5          " Make the window slightly transparent
+" set transparency=15          " Make the window slightly transparent
 
 " set font
 set guifont=Inconsolata:h14
@@ -93,25 +93,25 @@ nmap <leader>b :BufExplorer<CR>
 " }
 
 " SuperTab option for context aware completion
-let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabDefaultCompletionType = "<c-x><c-u>"
 
 " clang_complete {
 let g:clang_auto_select=0
 let g:clang_complete_auto=0
 let g:clang_complete_copen=1
-"let g:clang_hl_errors=1
+let g:clang_hl_errors=1
 "let g:clang_periodic_quickfix=0
-"let g:clang_snippets=1
-"let g:clang_snippets_engine="clang_complete"
-"let g:clang_conceal_snippets=1
+let g:clang_snippets=1
+let g:clang_snippets_engine="clang_complete"
+let g:clang_conceal_snippets=1
 let g:clang_exec="/usr/bin/clang"
 let g:clang_user_options=""
 let g:clang_auto_user_options=".clang_complete"
 let g:clang_use_library=1
 let g:clang_library_path="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib"
-"let g:clang_sort_algo="priority"
+let g:clang_sort_algo="alpha"
 "let g:clang_complete_macros=1
-"let g:clang_complete_patterns=0
+let g:clang_complete_patterns=0
 " }
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -129,6 +129,7 @@ nnoremap <silent> <F8> :TlistToggle<CR>
 if winwidth(0) >= 160
     let Tlist_WinWidth = 40
 endif
+
 "
 " 2013.3.7 yh add these two lines to enable NERDTree in pure commandline mode
 " upon startup and move the cursor to the main editing command
