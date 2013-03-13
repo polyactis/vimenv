@@ -1,6 +1,8 @@
 "MOVE THIS FILE TO YOUR HOME DIRECTORY AS ".vimrc"
 "PLEASE COMMENT WHAT DOES WHAT 
 
+" disable vi compatiblity
+set nocompatible
 
 "security
 set nomodeline
@@ -18,8 +20,6 @@ set fenc=utf-8
 set spell spelllang=en
 
 
-" disable vi compatiblity
-set nocompatible
 set background=dark     " Assume a dark background
 filetype plugin on
 
