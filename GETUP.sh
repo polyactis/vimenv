@@ -58,6 +58,10 @@ cd taglist.vim
 git pull
 cd ..
 
+git clone git://github.com/msanders/snipmate.vim.git
+cd snipmate.vim
+git pull
+cd ..
 
 ## REPEAT FOR NEW BUNDLES
 
