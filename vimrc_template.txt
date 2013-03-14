@@ -93,7 +93,7 @@ nmap <leader>b :BufExplorer<CR>
 " }
 
 " SuperTab option for context aware completion
-let g:SuperTabDefaultCompletionType = "<c-x><c-u>"
+let g:SuperTabDefaultCompletionType = "<c-x><c-u><c-p>"
 
 " clang_complete {
 let g:clang_auto_select=0
