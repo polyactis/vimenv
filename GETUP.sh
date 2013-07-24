@@ -2,7 +2,7 @@
 
 ## INIT
 mkdir -p ~/.vim/autoload ~/.vim/bundle
-curl -Sso ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+curl --insecure -Sso ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 
 ## WHERE THINGS ARE
 cd ~/.vim/bundle
@@ -55,6 +55,11 @@ cd ..
 
 git clone https://github.com/vim-scripts/taglist.vim.git
 cd taglist.vim
+git pull
+cd ..
+
+git clone https://github.com/vim-perl/vim-perl.git
+cd vim-perl
 git pull
 cd ..
 
