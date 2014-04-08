@@ -38,10 +38,16 @@ cd nerdcommenter
 git pull
 cd ..
 
-git clone https://github.com/tsaleh/vim-matchit.git
-cd vim-matchit
+#git clone https://github.com/tsaleh/vim-matchit.git
+#cd vim-matchit
+#git pull
+#cd ..
+
+git clone https://github.com/tmhedberg/matchit.git
+cd matchit
 git pull
 cd ..
+
 
 git clone https://github.com/widox/vim-buffer-explorer-plugin.git
 cd vim-buffer-explorer-plugin
