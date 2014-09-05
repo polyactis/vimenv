@@ -69,5 +69,9 @@ cd vim-perl
 git pull
 cd ..
 
+wget http://glx.sourceforge.net/downloads/vim_gle.zip
+unzip vim_gle.zip -d vim_gle
+rm vim_gle.zip
+
 ## REPEAT FOR NEW BUNDLES
 

@@ -1,5 +1,5 @@
 "MOVE THIS FILE TO YOUR HOME DIRECTORY AS ".vimrc"
-"PLEASE COMMENT WHAT DOES WHAT 
+"PLEASE COMMENT WHAT DOES WHAT
 
 " disable vi compatiblity
 set nocompatible
@@ -28,6 +28,9 @@ set autoindent
 
 " use intelligent indentation for C
 set smartindent
+
+" turn off word wrap
+set nowrap
 
 
 autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
@@ -121,7 +124,7 @@ let g:clang_complete_patterns=0
 let Tlist_Auto_Open = 1
 " Exit if TagList is the only window left
 let Tlist_Exit_OnlyWindow = 1
-" Auto close the fold for inactive files 
+" Auto close the fold for inactive files
 let Tlist_File_Fold_Auto_Close = 1
 " Only show the current file in TagList
 "let Tlist_Show_One_File = 1
