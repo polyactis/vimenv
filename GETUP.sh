@@ -2,10 +2,15 @@
 
 ## INIT
 mkdir -p ~/.vim/autoload ~/.vim/bundle
-curl --insecure -Sso ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+
+pushd ~/.vim/autoload/
+wget https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+popd
+
+# curl --insecure -So ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 
 ## WHERE THINGS ARE
-cd ~/.vim/bundle
+pushd ~/.vim/bundle
 
 ## AN UGLY WAY TO GET & KEEP BUNDLES UP TO DATE
 git clone https://github.com/Rip-Rip/clang_complete.git
@@ -75,3 +80,4 @@ rm vim_gle.zip
 
 ## REPEAT FOR NEW BUNDLES
 
+popd

@@ -30,7 +30,7 @@ set autoindent
 set smartindent
 
 " turn off word wrap
-set nowrap
+"set nowrap
 
 
 autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
