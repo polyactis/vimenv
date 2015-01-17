@@ -17,10 +17,10 @@ set fenc=utf-8
 " set spellchecking
 " For specific files
 " au FileType mail,markdown,tex setlocal spell spelllang=en
-set spell spelllang=en
+"set spell spelllang=en
 
 
-set background=dark     " Assume a dark background
+"set background=dark     " Assume a dark background
 filetype plugin on
 
 " use indentation of previous line
@@ -45,7 +45,7 @@ set expandtab        " expand tabs to spaces
 
 " turn syntax highlighting on
 syntax on
-colorscheme molokai
+"colorscheme molokai
 
 " turn line numbers on
 set number
@@ -62,8 +62,8 @@ set showmatch
 set comments=sl:/*,mb:\ *,elx:\ */
 
 "nobackups
-set nobackup
-set noswapfile
+"set nobackup
+"set noswapfile
 
 "set pasteToggle
 set pastetoggle=<F2>
@@ -72,12 +72,12 @@ set pastetoggle=<F2>
 set noeb vb t_vb=
 
 " diable gui menu
-set guioptions-=T
+"set guioptions-=T
 
 " set transparency=15          " Make the window slightly transparent
 
 " set font
-set guifont=Inconsolata:h14
+"set guifont=Inconsolata:h14
 
 " NerdTree {
 map <A-Space> :NERDTreeToggle<CR>
