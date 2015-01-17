@@ -78,6 +78,11 @@ wget http://glx.sourceforge.net/downloads/vim_gle.zip
 unzip vim_gle.zip -d vim_gle
 rm vim_gle.zip
 
+git clone https://github.com/fatih/vim-go.git
+pushd vim-go
+git pull
+popd
+
 ## REPEAT FOR NEW BUNDLES
 
 popd
