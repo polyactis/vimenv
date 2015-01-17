@@ -4,6 +4,7 @@
 mkdir -p ~/.vim/autoload ~/.vim/bundle
 
 pushd ~/.vim/autoload/
+rm pathogen.vim
 wget https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 popd
 
@@ -11,6 +12,12 @@ popd
 
 ## WHERE THINGS ARE
 pushd ~/.vim/bundle
+
+
+git clone https://github.com/majutsushi/tagbar.git tagbar
+pushd tagbar
+git pull
+popd
 
 ## AN UGLY WAY TO GET & KEEP BUNDLES UP TO DATE
 git clone https://github.com/Rip-Rip/clang_complete.git
