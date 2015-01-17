@@ -13,13 +13,19 @@ popd
 ## WHERE THINGS ARE
 pushd ~/.vim/bundle
 
+## AN UGLY WAY TO GET & KEEP BUNDLES UP TO DATE
+git clone https://github.com/Valloric/YouCompleteMe.git
+pushd YouCompleteMe
+git pull
+git submodule update --init --recursive
+./install.sh --clang-completer
+popd
 
 git clone https://github.com/majutsushi/tagbar.git tagbar
 pushd tagbar
 git pull
 popd
 
-## AN UGLY WAY TO GET & KEEP BUNDLES UP TO DATE
 git clone https://github.com/Rip-Rip/clang_complete.git
 cd clang_complete
 git pull
