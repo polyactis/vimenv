@@ -82,17 +82,18 @@ set noeb vb t_vb=
 
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
-
+let g:tagbar_width = 30
 
 " NerdTree {
 map <F12> :NERDTreeToggle<CR>
+" show hidden files
 let NERDTreeShowHidden=1
 " }
 
 " NerdTREE_TABS {
-let g:nerdtree_tabs_open_on_gui_startup=1
-let g:nerdtree_tabs_open_on_console_startup=1
-let g:nerdtree_tabs_open_on_new_tab=1 " Love this!
+"let g:nerdtree_tabs_open_on_gui_startup=1
+"let g:nerdtree_tabs_open_on_console_startup=1
+"let g:nerdtree_tabs_open_on_new_tab=1 " Love this!
 let g:nerdtree_tabs_autoclose=1
 " }
 
@@ -144,5 +145,19 @@ let g:clang_complete_patterns=0
 " 2013.3.7 yh add these two lines to enable NERDTree in pure commandline mode
 " upon startup and move the cursor to the main editing command
 " http://stackoverflow.com/questions/1447334/how-do-you-add-nerdtree-to-your-vimrc
-autocmd VimEnter * NERDTree
+" Use NERDTree to auto-open NERDTree after all initialization is done 
+" Here is to turn off NerdTree
+autocmd VimEnter * NERDTreeClose
+" auto-open TagBar after all initialization is done
+"autocmd VimEnter * TagbarOpen
+" http://phraktured.net/config/.vim/doc/tagbar.txt
+" open it only if you're opening Vim with a supported file/files
+autocmd VimEnter * nested :call tagbar#autoopen(1)
+"  opening Tagbar also if you open a supported file in an already running
+"  Vim:
+autocmd FileType * nested :call tagbar#autoopen(0)
+"If you use multiple tabs and want Tagbar to also open in the current tab when
+"you switch to an already loaded, supported buffer
+autocmd BufEnter * nested :call tagbar#autoopen(0)
+" move the cursor to the main window
 autocmd VimEnter * wincmd p
