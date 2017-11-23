@@ -1,6 +1,6 @@
 # 20171123 doc by yh
 
-The goal of this repo is to setup vim close to be GUI IDEA.
+The goal of this repo is to setup vim close to be a GUI IDE.
 
 This repo contains a shell script (GETUP.sh) to download and setup all vim plugins.
 
