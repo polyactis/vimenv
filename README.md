@@ -1,3 +1,14 @@
+# 20171123 doc by yh
+
+The goal of this repo is to setup vim close to be GUI IDEA.
+
+This repo contains a shell script (GETUP.sh) to download and setup all vim plugins.
+
+To setup:
+
+1. run GETUP.sh to fetch all vim plugins.
+2. Modify ~/.vimrc according to vimrc_template.txt
+
 # Tagbar: a class outline viewer for Vim
 
 ## What Tagbar is
